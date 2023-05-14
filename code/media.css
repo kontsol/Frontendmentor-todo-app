@@ -1,0 +1,137 @@
+@media (max-width: 1440px) {
+  .content-header h1 {
+    font-size: 3rem;
+  }
+
+  form input {
+    height: 3.8rem;
+    width: 42rem;
+  }
+
+  form ul li {
+    width: 42rem;
+    height: 3.8rem;
+    font-size: 1.3rem;
+  }
+
+  #check-svg {
+    top: 33%;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .bottom-part {
+    width: 42.1rem;
+    height: 2.7rem;
+  }
+
+  .bottom-part h4 {
+    font-size: 1.23rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  #check-svg {
+    top: 31.1%;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-header h1 {
+    margin-left: 8rem;
+  }
+
+  header img {
+    height: 31vh;
+    width: 166vw;
+  }
+
+  form {
+    display: grid;
+    place-items: center;
+  }
+
+  form input {
+    width: 32rem;
+    height: 4rem;
+
+    margin-left: 8rem;
+  }
+
+  form ul {
+    margin-top: 1rem;
+  }
+
+  form ul li {
+    width: 32rem;
+    height: 4rem;
+    margin-left: 8rem;
+  }
+
+  .bottom-part {
+    width: 32rem;
+    height: 2.9rem;
+    margin-left: 8rem;
+    margin-top: 0.55rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .content-header h1 {
+    margin-left: 7rem;
+  }
+
+  header img {
+    height: 31vh;
+    width: 170vw;
+  }
+
+  form input {
+    width: 30rem;
+  }
+
+  form ul {
+    margin-top: 1.3rem;
+  }
+
+  form ul li {
+    width: 30rem;
+  }
+
+  .bottom-part {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 320px) {
+  header img {
+    height: 41vh;
+    width: 200vw !important;
+  }
+
+  .content {
+    top: 60%;
+  }
+
+  .content-header h1 {
+    font-size: 4rem;
+    margin-left: 10rem;
+  }
+
+  form input,
+  form ul li,
+  .bottom-part {
+    margin-left: 10rem;
+    width: 27rem;
+  }
+
+  .bottom-part h4 {
+    font-size: 0.95rem;
+  }
+}

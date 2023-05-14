@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Todo List</title>
+  </head>
+  <body>
+    <header>
+      <img id="main-image" src="/images/bg-desktop-dark.jpg" alt="" />
+    </header>
+    <div class="content">
+      <div class="content-header">
+        <h1>TODO</h1>
+      </div>
+      <form id="form">
+        <input
+          class="form_input"
+          id="form_input"
+          type="text"
+          placeholder="Create a new todo.. "
+          autocomplete="off"
+        />
+        <ul class="form_ul"></ul>
+        <div class="bottom-part">
+          <h4>5 days left</h4>
+          <h4 id="all-btn">All</h4>
+          <h4 id="active-btn">Active</h4>
+          <h4 id="clear-completed">Clear completed</h4>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

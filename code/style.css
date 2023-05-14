@@ -1,0 +1,226 @@
+:root {
+  /* PRIMARY */
+  --bright-blue: hsl(220, 98%, 61%);
+  --check-background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+
+  /* LIGHT THEME */
+  --light-gray: hsl(0, 0%, 98%);
+  --light-grayish-blue: hsl(236, 33%, 92%);
+  --light-grayish-blue-2: hsl(233, 11%, 84%);
+  --light-dark-grayish-blue: hsl(236, 9%, 61%);
+  --light-dark-grayish-blue-2: hsl(235, 19%, 35%);
+
+  /* DARK */
+  --dark-blue: hsl(235, 21%, 11%);
+  --dark-desaturated-blue: hsl(235, 24%, 19%);
+  --dark-light-grayish-blue: hsl(234, 39%, 85%);
+  --dark-light-grayish-blue-hover: hsl(236, 33%, 92%);
+  --dark-grayish-blue: hsl(234, 11%, 52%);
+  --dark-grayish-blue: hsl(233, 14%, 35%);
+}
+
+/* FONT 
+font-family: 'Josefin Sans', sans-serif;
+400,700
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: var(--dark-blue);
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+header img {
+  height: 33vh;
+  width: 100vw;
+  background-position: center;
+  background-size: contain;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+}
+
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-header h1 {
+  color: var(--light-gray);
+  font-weight: 700;
+  font-size: 2.8rem;
+  letter-spacing: 9px;
+}
+
+form {
+  margin-top: 1rem;
+  padding: 1.5rem 0;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+}
+
+form input {
+  background-color: var(--dark-desaturated-blue);
+  width: 38rem;
+  height: 3.2rem;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: var(--light-gray);
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+form ul {
+  margin-top: 0.7rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 100%;
+}
+
+form ul li {
+  background-color: red;
+  list-style-type: none;
+  border-bottom: 1px solid var(--dark-grayish-blue);
+  font-weight: 400;
+  font-size: 1.1rem;
+  background-color: var(--dark-desaturated-blue);
+  border-radius: 6px;
+  color: var(--light-gray);
+  display: flex;
+  align-items: center;
+  width: 38rem;
+  height: 3.7rem;
+  vertical-align: bottom;
+  position: relative;
+  padding: 1.2rem 3.5rem 0 3.5rem;
+  overflow: auto;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 100;
+  -webkit-box-orient: vertical;
+  user-select: auto;
+}
+
+form ul li::selection {
+  margin-left: 2rem;
+}
+
+#check-svg {
+  display: block;
+  color: var(--dark-desaturated-blue);
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 20%;
+  border: 1px solid white;
+  /* border: none; */
+  outline: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-left: 1rem;
+  font-weight: 700;
+  border-radius: 16px;
+}
+
+#close-svg {
+  display: block;
+  color: var(--light-gray);
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 20%;
+  right: 1%;
+  /* margin-left: 26rem; */
+  border-radius: 16px;
+  width: 2rem;
+  height: 2rem;
+}
+
+#close-svg-light {
+  display: block;
+  background-image: url("/images/icon-cross-light.svg");
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  /* margin-left: 26rem; */
+  border-radius: 16px;
+  width: 1.8rem;
+  height: 1.7rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.bottom-part {
+  display: grid;
+  place-items: center;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: 1fr 1fr 1fr 1.5fr;
+  /* justify-content: center; */
+  width: 38rem;
+  height: 2.2rem;
+  font-weight: 400;
+  background-color: var(--dark-desaturated-blue);
+  color: var(--dark-grayish-blue);
+  margin-left: 1rem;
+  border-radius: 4px;
+  /* padding: 0.5 0rem 0.5rem 2rem; */
+}
+
+#clear-completed,
+#all-btn,
+#active-btn,
+#clear-completed {
+  cursor: pointer;
+}
+
+#clear-completed:hover,
+#all-btn:hover,
+#active-btn:hover,
+#clear-completed:hover {
+  color: var(--light-gray);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: var(--light-dark-grayish-blue-2);
+}
+
+.check-completed {
+  background-color: hsl(280, 87%, 65%);
+  color: var(--light-gray);
+  border: none;
+}
+
+.light_theme {
+  background-color: var(--light-gray);
+  color: var(--dark-blue);
+  border-bottom: 1px solid var(--light-dark-grayish-blue);
+}
+
+.dark_theme {
+  background-color: var(--dark-desaturated-blue);
+  color: var(--light-gray);
+  border-bottom: 1px solid var(--dark-grayish-blue);
+}
